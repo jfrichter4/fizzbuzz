@@ -1,7 +1,7 @@
 """
 fizzbuzz.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Joe Richter
+Credit: Looping Using RunPython, and previous projects of mine.
 
 Assignment:
 
@@ -44,3 +44,17 @@ Fizz
 Fizz
 Buzz
 """
+nums = int(input("How many numbers shall we print? "))
+fizz = int(input("For multiples of what number shall we print 'Fizz'? "))
+buzz = int(input("For multiples of what number shall we print 'Buzz'? "))
+
+for j in range(1, nums+1):
+
+    if j % (fizz*buzz) == 0:
+        print("FizzBuzz")
+    #Having this be the first makes it print FizzBuzz!
+    elif j % buzz == 0:
+        print("Buzz")
+    elif j % fizz == 0:
+        print("Fizz")
+    else: print(j)
