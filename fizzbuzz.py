@@ -50,11 +50,9 @@ buzz = int(input("For multiples of what number shall we print 'Buzz'? "))
 
 for k in range(1, nums+1):
 
-    if k % (buzz*fizz) == 0:
+    if k % buzz == 0 and k % fizz == 0:
         print("FizzBuzz")
     #Having this be the first makes it print FizzBuzz!
-    elif k % (fizz*buzz) == 0:
-        print("FizzBuzz")
     elif k % buzz == 0:
         print("Buzz")
     elif k % fizz == 0:
